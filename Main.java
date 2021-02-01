@@ -3,16 +3,27 @@ import java.io.*;
 public class Main {
     public static void main(String[] args) throws Exception{
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String y = reader.readLine();
-        int x = Integer.parseInt(y);
-
-        if(x<100){
-
-            System.out.println("less");
+        String s = reader.readLine();
+        int n = Integer.parseInt(s);
+        if (n == 5)
+        {
+            System.out.println("отлично");
         }
-        else{
-
-            System.out.println("not less");
+        else if (n == 4)
+        {
+            System.out.println("хорошо");
+        }
+        else if (n == 3)
+        {
+            System.out.println("удовлетворительно");
+        }
+        else if (n == 2)
+        {
+            System.out.println("неудовлетворительно");
+        }
+        else
+        {
+            System.out.println("недопустимое значение");
         }
     }
 }
