@@ -1,43 +1,20 @@
 package com.metanit;
-import java.lang.*;
-import java.io.*;
+import static java.lang.Math.*;
 public class Main {
-    public static void main(String[] args) throws Exception{
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String s = reader.readLine();
-        int n = Integer.parseInt(s);
-        if (n < 0)
-        {
-            System.out.println("недопустимое значение");
+    public static void main(String[] args) {
+        double a = 7.5;
+        double b = 1.4;
+        double x1 = -4.13;
+        double x2 = 0.77;
+        double y1 = 0;
+        double y2 = 0;
+        y1 = a - b * b * x1;
+        y2 = 1 / (x2 * x2 + exp(Math.log(a)));
+        if (x1 <= -3) {
+            System.out.print("y1 = " + y1 + "\n");
         }
-        else if (n < 51)
-        {
-            System.out.println("Разряд F");
-        }
-        else if (n < 61 )
-        {
-            System.out.println("Разряд E");
-        }
-        else if (n < 71)
-        {
-            System.out.println("Разряд D");
-        }
-        else if (n < 81)
-        {
-            System.out.println("Разряд C");
-        }
-        else if (n < 91)
-        {
-            System.out.println("Разряд B");
-        }
-
-        else if (n <= 100)
-        {
-            System.out.println("Разряд A");
-        }
-        else
-        {
-            System.out.println("недопустимое значение");
+        if (x2 > -3) {
+            System.out.print("y2 = " + y2 + "\n");
         }
     }
-}
+    }
