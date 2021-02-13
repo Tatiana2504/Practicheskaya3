@@ -7,12 +7,12 @@ public class Main {
         int[] B;
         B = new int[6];
 
-        B[0] = 10;
-        B[1] = 14;
-        B[2] = 36;
+        B[0] = 9;
+        B[1] = 15;
+        B[2] = 30;
         B[3] = 27;
-        B[4] = 43;
-        B[5] = 18;
+        B[4] = 5;
+        B[5] = 25;
 
         Integer[] integerArray = new Integer[B.length];
 
